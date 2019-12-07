@@ -1,5 +1,5 @@
 {% set name = "pyppdf" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 64f8b3c760e7ddcfa1170003151397f1abf7b8d3802762215fc7230268fbf4a5
+  sha256: 62dcef37e982fa29b2529dce29fd59af984ea82e6994960a7195ec9bb4ac9eaf
 
 build:
   noarch: python
