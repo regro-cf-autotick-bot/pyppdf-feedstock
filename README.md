@@ -5,11 +5,13 @@ Home: https://github.com/kiwi0fruit/pyppdf
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyppdf-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pyppeteer PDF. Print html sites and files to pdf via pyppeteer (uses patched pyppeteer that by default downloads updated Chromium revision via https with certifi).
 
+Development: https://github.com/kiwi0fruit/pyppdf
 
+Documentation: https://github.com/kiwi0fruit/pyppdf
 
 Current build status
 ====================
