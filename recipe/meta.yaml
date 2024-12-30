@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: beb94e8ce9e8893f5dc17d4b73176019b7e88d8f3e38eb72782a3a6c0bebffeb
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pyppdf = pyppdf.pyppeteer_pdf:cli
     - pyppdf-install = pyppdf.install:install
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - certifi
     - click
     - psutil
@@ -30,6 +30,8 @@ requirements:
     - pyppeteer >=0.2.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyppdf
     - pyppdf.patch_pyppeteer
